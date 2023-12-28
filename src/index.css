@@ -1,0 +1,53 @@
+@import "keep-react/css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .center-div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  .fancy_border {
+    border-radius: 36% 64% 68% 32% / 39% 42% 58% 61%;
+  }
+
+  .myCollapse {
+    margin-left: -280px;
+    transition: 0.2s;
+  }
+  .openSidebar {
+    left: 0;
+    transition: 0.2s;
+  }
+  .bgImage {
+    background-image: url(./assets/linearTech.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    color: white;
+  }
+  .bgImage2 {
+    background-image: url(./assets/linearTech2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-position: left; */
+    background-size: cover;
+    color: white;
+  }
+  .bgImage3 {
+    background-image: url(./assets/linearWave.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-position: left; */
+    background-size: cover;
+    color: white;
+  }
+}
