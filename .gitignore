@@ -9,6 +9,9 @@ lerna-debug.log*
 
 node_modules
 dist
+postcss.config.jso
+vite.config.js
+
 dist-ssr
 *.local
 
