@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div id="project" className="w-full mt-6">
       <h1 className="text-2xl text-center py-3">
-        Check out my some of Projects
+        Check out my some of Projects.
       </h1>
 
       <div className="w-11/12 mx-auto flex justify-center gap-4 flex-wrap">

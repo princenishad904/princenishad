@@ -23,8 +23,8 @@ function Home() {
             <span className="text-md my-2 block">Frontend Developer</span>
 
             <p className="my-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              suscipit eaque, molestias commodi deserunt beatae?
+              Hi, I'm Frontend Developer. i am made six projects using HTML5,
+              CSS3 , JavaScript, Tailwind css ,React.js .
             </p>
 
             <div className="mt-8 flex max-sm:justify-center gap-4">

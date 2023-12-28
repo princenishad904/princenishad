@@ -14,14 +14,14 @@ const Education = () => {
             Uttranchal University, Uttrakhand
           </h1>
           <h1 className="text-md text-gray-500">
-            BCA Bachelor of computer application . July 2023 - July 2026
+            Bachelor of Computer Applications. July 2023 - July 2026
           </h1>{" "}
           <h3>CGPA - 8.3 %</h3>
         </div>
         <hr />
         <div className="my-2">
           <h1 className="text-2xl max-sm:text-xl text-gray-500">
-            Ramkrita intermediate Collage . Uttar Pradesh ( Kushinagar ){" "}
+            RAMKRITA INTERMEDIATE COLLEGE . Uttar Pradesh ( Kushinagar )
           </h1>
           <span>July 2021 - July 2023</span>
           <h3>
