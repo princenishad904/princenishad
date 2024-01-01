@@ -8,7 +8,7 @@ const Testimonial = () => {
         Testimonial
       </h1>
       <h2 className="text-xl text-center">What our client say about us ?</h2>
-      <div className="w-4/5 mx-auto flex justify-center items-center gap-3 flex-wrap ">
+      <div className="w-4/5 max-md:w-11/12 mx-auto flex justify-center items-center gap-3 flex-wrap my-8">
         <TestimonialCard />
         <TestimonialCard />
         <TestimonialCard />

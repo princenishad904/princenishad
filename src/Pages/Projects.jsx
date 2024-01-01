@@ -5,7 +5,7 @@ import ProjectData from "../ProjectsData/Projects.json";
 const Projects = () => {
   return (
     <div id="project" className="w-full mt-6">
-      <h1 className="text-2xl text-center py-3">
+      <h1 className="text-2xl text-center py-3  text-purple-600">
         Check out my some of Projects.
       </h1>
 

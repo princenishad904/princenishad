@@ -12,7 +12,9 @@ const About = () => {
           <img src={aboutImage} alt="image" />
         </div>
         <div className="w-6/12 max-md:w-full px-2">
-          <h1 className="text-3xl my-4 max-sm:text-center">About Me</h1>
+          <h1 className="text-3xl my-4 max-sm:text-center text-purple-600">
+            About Me
+          </h1>
           <p>
             Hello, My name is Prince Nishad Currently I am doing Bachelor of
             Computer Applications ( BCA ) from Uttranchal University Uttrakhand.

@@ -8,7 +8,7 @@ const Education = () => {
       className="w-4/5 max-lg:w-full mx-auto items-center flex max-md:flex-col-reverse gap-4 p-2 my-6 "
     >
       <div className="w-4/5 max-md:w-full p-3">
-        <h2 className="text-3xl py-3">Education</h2>
+        <h2 className="text-3xl py-3  text-purple-600">Education</h2>
         <div className="my-2">
           <h1 className="text-2xl max-sm:text-xl text-gray-500">
             Uttranchal University, Uttrakhand
