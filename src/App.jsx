@@ -6,6 +6,7 @@ import About from "./Pages/About";
 import { IoIosArrowUp } from "react-icons/io";
 import Education from "./Pages/Education";
 import Skills from "./Pages/Skills";
+import Testimonial from "./Pages/Testimonial";
 
 function App() {
   const [scrollToTop, setScrollToTop] = useState("hidden");
@@ -28,6 +29,7 @@ function App() {
       <Education />
       <Skills />
       <Projects />
+      <Testimonial />
       <button
         onClick={() => {
           window.scrollTo(0, 0);

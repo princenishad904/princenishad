@@ -50,4 +50,7 @@
     background-size: cover;
     color: white;
   }
+  .testimonial {
+    margin-top: -32px;
+  }
 }

@@ -10,9 +10,13 @@ const ProjectsCard = ({
   madeBy,
 }) => {
   return (
-    <div className="w-72 max-sm:w-11/12 p-2 border rounded-md overflow-hidden shadow-md hover:shadow-lg hover:scale-105 transition">
+    <div className="w-72 max-sm:w-11/12 p-2 border rounded-md overflow-hidden shadow-md hover:shadow-lg hover:scale-105 transition relative">
       <div className="full">
-        <img src={poster} alt="project Image" className="rounded-xl" />
+        <img
+          src={poster}
+          alt="project Image"
+          className="rounded-xl h-44 w-full"
+        />
       </div>
       <div>
         <h1 className="my-2 text-xl">{title}</h1>
@@ -28,12 +32,12 @@ const ProjectsCard = ({
               </span>
             ))}
           </div>
-          <p className="py-2">{decription}</p>
+          <p className="py-2 mb-10">{decription}</p>
         </div>
 
-        <div className="flex gap-4 my-2">
+        <div className="flex gap-4  absolute bottom-0 my-3">
           <a href={liveLink} target="_blank">
-            <button className="py-1 px-2 rounded-md bg-purple-600 text-white">
+            <button className="py-1 px-9 rounded-md bg-purple-600 text-white">
               Live
             </button>
           </a>

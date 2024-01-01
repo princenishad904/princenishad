@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "title": "Movie Review",
-    "poster": "https://t4.ftcdn.net/jpg/03/08/69/75/360_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg",
-    "liveLink": "https://codewithprince.netlify.app/",
-    "codeLink": "",
+    "title": "imdblite (movie review)",
+    "poster": "https://cdn.customessaymeister.com/file/bzjHnSSBoJUl6KHIt5tmG3hUccnA4ighuwpFVfnd.png?encode=jpeg",
+    "liveLink": "https://imdblite.netlify.app/",
+    "codeLink": "https://github.com/princenishad904/movie-review",
     "decription": "Movie reviewing web app in this projects we have a admin pannel to upload more movies for rating. and we can upload upcoming movies from admin panel all CRUD systems are working",
     "madeBy": [
       "React.js",
