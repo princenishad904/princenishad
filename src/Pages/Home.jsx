@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="w-full" id="home">
       <div
-        className="w-full max-sm:flex-col-reverse flex gap-4 justify-center items-center"
+        className="w-full max-sm:flex-col-reverse flex gap-8 justify-center items-center"
         style={{ minHeight: "85vh" }}
       >
         <div className="w-6/12 max-sm:w-11/12 grid place-items-center max-sm:h-72 h-96">

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import DarkAndLightMode from "../DarkAndLightMode";
 import { FaBars } from "react-icons/fa6";
 import { HiMiniXMark } from "react-icons/hi2";
+import logo from "../../assets/logo.png";
+import SocialIcons from "../SocialIcons";
 
 const Navbar = ({ navbar }) => {
   const [sidebar, setSideBar] = useState(true);
@@ -11,7 +13,9 @@ const Navbar = ({ navbar }) => {
         navbar ? "shadow-md" : ""
       }`}
     >
-      <div>logo</div>
+      <div className="w-32 rounded-xl overflow-hidden">
+        <img src={logo} alt="" />
+      </div>
       <div
         className={`max-md:absolute max-md:top-14   ${
           sidebar ? "myCollapse" : "openSidebar"
@@ -41,6 +45,9 @@ const Navbar = ({ navbar }) => {
             </li>
           </a>
         </ul>
+        <div className="hidden max-md:block relative mx-auto h-64">
+          <SocialIcons />
+        </div>
       </div>
       <div className="hidden max-md:block">
         <button onClick={() => setSideBar(!sidebar)} className="text-2xl p-2">
