@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "./Components/Layout/Layout";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
@@ -7,8 +7,21 @@ import { IoIosArrowUp } from "react-icons/io";
 import Education from "./Pages/Education";
 import Skills from "./Pages/Skills";
 import Testimonial from "./Pages/Testimonial";
+import ContectForm from "./Pages/ContectForm";
+import Loader from "./Components/Loader";
 
 function App() {
+  const [projectsData, setProjectsData] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      const data = await fetch(
+        "https://princenishad904.github.io/prortfolio_projects_v1_api/portfolio_project_api.json"
+      );
+      const res = await data.json();
+      setProjectsData(res);
+    })();
+  }, []);
   const [scrollToTop, setScrollToTop] = useState("hidden");
   const [navbar, setNavbar] = useState(false);
   window.addEventListener("scroll", () => {
@@ -28,8 +41,10 @@ function App() {
       <About />
       <Education />
       <Skills />
-      <Projects />
+      <Projects data={projectsData} />
       <Testimonial />
+      <ContectForm />
+      {projectsData == "" ? <Loader /> : null}
       <button
         onClick={() => {
           window.scrollTo(0, 0);
