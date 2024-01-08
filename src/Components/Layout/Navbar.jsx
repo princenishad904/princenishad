@@ -21,33 +21,30 @@ const Navbar = ({ navbar }) => {
           sidebar ? "myCollapse" : "openSidebar"
         } max-md:w-48 max-md:h-screen max-md:bg-gray-100`}
       >
-        <ul className="max-md:mt-8 max-md:ml-4 uppercase">
+        <ul className="max-md:mt-8 max-md:ml-4">
           <a href="#home">
-            <li className="inline-block px-2 my-4 mx-2 max-md:block">Home</li>
+            <li className="inline-block px-1 my-4 mx-2 max-md:block">Home</li>
           </a>
           <a href="#about">
-            <li className="inline-block px-2 my-4 mx-2 max-md:block">
+            <li className="inline-block px-1 my-4 mx-2 max-md:block">
               About Me
             </li>
           </a>
           <a href="#education">
-            <li className="inline-block px-2 my-4 mx-2 max-md:block">
+            <li className="inline-block px-1 my-4 mx-2 max-md:block">
               Education
             </li>
           </a>
           <a href="#skills">
-            <li className="inline-block px-2 my-4 mx-2 max-md:block">Skills</li>
+            <li className="inline-block px-1 my-4 mx-2 max-md:block">Skills</li>
           </a>
 
           <a href="#project">
-            <li className="inline-block px-2 my-4 mx-2 max-md:block">
-              projects
+            <li className="inline-block px-1 my-4 mx-2 max-md:block">
+              Projects
             </li>
           </a>
         </ul>
-        <div className="hidden max-md:block relative mx-auto h-64">
-          <SocialIcons />
-        </div>
       </div>
       <div className="hidden max-md:block">
         <button onClick={() => setSideBar(!sidebar)} className="text-2xl p-2">

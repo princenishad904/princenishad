@@ -1,26 +1,18 @@
 import React from "react";
 import { IoMdStar } from "react-icons/io";
+import Button from "@mui/material/Button";
+import Rating from "@mui/material/Rating";
 
-const TestimonialCard = () => {
+const TestimonialCard = ({ image, name, rating, qoutes }) => {
   return (
-    <div className="w-64 border my-5 relative mx-4 rounded-md shadow-xl pb-3">
-      <div className="w-14 h-14 rounded-full border mx-auto overflow-hidden testimonial">
-        <img
-          src="https://media.istockphoto.com/id/1297832726/photo/portrait-of-a-smiling-young-businessman.jpg?s=612x612&w=0&k=20&c=32Qg7TnqfGkrDwTL3q0X0Kx9ab3JDzuqxzp4poH39zc="
-          alt=""
-        />
+    <div className="w-11/12 max-sm:w-full mx-auto border my-4 items-center flex justify-center gap-6 max-md:flex-col max-md:items-start p-3 rounded-md ">
+      <div className="w-28 h-28 max-sm:w-24 max-sm:h-24 border border-purple-500 rounded-full overflow-hidden p-1 ">
+        <img src={image} alt="" className="rounded-full" />
       </div>
-      <div className="my-8 flex justify-between">
-        <h1 className="text-xl mx-2">Prince Nishad</h1>
-        <h3 className="px-2 bg-purple-600 text-white flex items-center rounded-l-lg">
-          4.5 <IoMdStar />
-        </h3>
-      </div>
-      <div className="text-center px-1">
-        <p>
-          Who could look on these monuments without reflecting on the vanity of
-          mortals in thus offering up testimonials.
-        </p>
+      <div className="w-4/5 max-md:w-full grid place-content-center">
+        <h2 className="text-2xl font-semibold">{name}</h2>
+        <Rating name="read-only" value={rating} readOnly />
+        <p>{qoutes}</p>
       </div>
     </div>
   );

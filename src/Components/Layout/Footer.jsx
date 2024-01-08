@@ -13,7 +13,7 @@ const Footer = () => {
 
       <hr className="pt-2 my-4" />
       <h1 className="text-xl">All Copy &copy; rightriverse 2022 - 2025</h1>
-      <div className="h-10 max-md:hidden">
+      <div className="mt-6 max-md:hidden">
         <SocialIcons />
       </div>
     </div>

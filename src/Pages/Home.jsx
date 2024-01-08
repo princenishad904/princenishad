@@ -1,5 +1,7 @@
 import React from "react";
 import PrinceImage from "../assets/prince.jpg";
+import prince_resume from "../assets/prince_nishad_resume.pdf";
+import SocialIcons from "../Components/SocialIcons";
 
 function Home() {
   return (
@@ -27,13 +29,21 @@ function Home() {
               CSS3 , JavaScript, Tailwind css ,React.js .
             </p>
 
-            <div className="mt-8 flex max-sm:justify-center gap-4">
-              <button className="bg-blue-500 text-white shadow-md shadow-blue-200  py-1 px-3 rounded">
-                Linkedin
-              </button>
-              <button className="bg-purple-500 text-white shadow-md shadow-purple-300  py-1 px-3 rounded">
-                Download CV
-              </button>
+            <div className="mt-4 flex max-sm:justify-center gap-4">
+              <a href="https://linkedin.com/in/prince-nishad" target="_blank">
+                <button className="bg-blue-500 text-white shadow-md shadow-blue-200  py-1 px-3 rounded">
+                  Linkedin
+                </button>
+              </a>
+
+              <a href={prince_resume} download>
+                <button className="bg-purple-500 text-white shadow-md shadow-purple-300  py-1 px-3 rounded">
+                  Download CV
+                </button>
+              </a>
+            </div>
+            <div className="mt-8 hidden max-sm:block">
+              <SocialIcons />
             </div>
           </div>
         </div>
